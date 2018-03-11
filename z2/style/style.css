@@ -1,0 +1,176 @@
+html{height: 100%;}
+
+body
+{ 
+  font-family: "lucida sans", arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  font-size: 0.8em;
+  background: #090708;
+  color: #5D5D5D;
+}
+
+p
+{ margin: 0px;
+  padding: 0px;
+  padding-bottom: 15px;
+  line-height: 1.7em;
+}
+
+h1, h2, #htext_text span
+{ font: normal 180% 'century gothic', arial, sans-serif;
+  color: #43423F;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;}
+
+h2
+{ font: normal 170% 'century gothic', arial, sans-serif;
+  color: #B60000;}
+
+a, a:hover
+{ 
+  color: #635B53;
+  text-decoration: none;}
+
+a:hover
+{ border-bottom: 1px solid;
+  color: #00C5EE;}
+
+a{ 
+outline: none;}
+
+ul{ 
+  margin: 2px 0px 18px 16px;
+  padding: 0px;}
+
+ul li{ 
+  list-style-type: square;
+  margin: 0px 0px 6px 0px; 
+  padding: 0px;}
+
+#main, #header, footer{
+  margin-left: auto; 
+  margin-right: auto;}
+
+#header{ 
+  height: 46px;
+  padding-top: 4px;
+  padding-left: 4px;} 
+
+#header span{
+    text-align: center;
+    display: block;
+    padding-top: 5px;
+    font-size: 2.0em;
+    color: wheat;
+}
+
+#obsah_outer{ 
+  width: 1270px;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+  border-radius: 25px;
+  border: 15px solid #FFF;} 
+
+#obsah{ 
+  text-align: left;
+  background-color:#EDEDED;
+  padding: 10px 20px 20px 20px;
+  }
+
+#map{
+  position: relative;
+  height: 630px;
+  width: 1250px;
+}
+
+#map .mappic{
+  height: 630px;
+  width: 1290px;
+  position: absolute;
+}
+.marker {
+  height: 50px;
+  width: 50px; 
+}
+
+#blava{
+  top: 437px;
+    left: 86px;
+}
+
+#blava .infotext{
+    top: -220px;
+}
+
+#nitra{
+  top: 376px;
+  left: 295px;
+}
+
+#bystrica{
+  top: 248px;
+  left: 541px;
+}
+
+#kosice{
+  top: 265px;
+  left: 939px;
+}
+
+#kosice .infotext{
+  left: -405px;
+}
+
+.info{
+  position: absolute;
+}
+
+.info .infotext{
+    position: absolute;
+    display: none;
+    border: 2px solid black;
+    border-radius: 8px;
+    left: 54px;
+    top: -160px;
+    z-index: 100;
+    width: 400px;
+    background-color: white;
+}
+
+.info:hover .infotext {
+    display: block;
+}
+
+.infotext .header
+{
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid black;
+  text-align: center;
+  font: normal 170% 'century gothic', arial, sans-serif;
+  padding: 5px 0 5px 0;
+  color: #B60000;
+}
+
+.content table{
+  margin-left: 10px;
+}
+
+#obsah ul{ margin: 2px 0 22px 0px;}
+
+#obsah ul li { 
+  list-style-type: none;
+  background: url(bullet.png) no-repeat;
+  margin: 0px; 
+  padding: 0px 0px 4px 25px;
+  line-height: 1.5em;}
+
+footer{ 
+  height: 30px;
+  padding: 20px 0 5px 0;
+  text-align: center; 
+  color: #EEF3CD;
+  letter-spacing: 0.1em;
+}
+
