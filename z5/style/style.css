@@ -1,0 +1,273 @@
+html{height: 100%;}
+
+body
+{ 
+  font-family: "lucida sans", arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  font-size: 0.8em;
+  background: #090708;
+  color: #5D5D5D;
+}
+
+#primes {
+  display: none;
+}
+
+.wrapper{
+  width: 100%;
+}
+
+textarea{
+
+    width: 100%;
+    min-height: 350px;
+    border-radius: 10px;
+}
+
+#calculatin {
+
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+  background-image: url('./loading.svg');
+  background-size: contain;
+  text-align: center;
+  vertical-align: middle;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 1px;
+}
+
+#calculatin span{
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font: normal 300% 'century gothic', arial, sans-serif;
+  color: #000000;
+}
+
+.error{
+  border-color: red;
+}
+fieldset{
+  margin-bottom: 15px;
+}
+fieldset legend{
+    font: normal 150% 'century gothic', arial, sans-serif;
+    color: #43423F;
+
+}
+
+.checkboxs div label{
+  padding-left: 20px;
+}
+/*
+.error-msg{
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: black 2px solid;
+}
+*/
+
+#error-msg
+{
+  border: 2px solid red;
+    padding: 5px;
+    font: normal 180% 'century gothic', arial, sans-serif;
+    background: #EEF3CD;
+    display: none;
+}
+
+.row{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.centered{
+  text-align: center;
+}
+.field{
+  display: inline-block;
+  position: relative;
+  width: 49%;
+}
+
+.form-style {
+    margin:10px auto;
+    max-width: 700px;
+    padding: 0px 12px 10px 20px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.form-style label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+}
+
+input,
+textarea, 
+select,
+button{
+    box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    outline: none;
+    min-width: 200px; 
+    height: 35px; 
+}
+
+.form-style textarea{
+  height: auto;
+  width: 100%
+}
+
+button
+{
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: bold;
+  background: #4B99AD;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+    width: 100%;
+}
+
+.form-style input[type=checkbox], .form-style input[type=radio]{
+
+  float:left;
+  min-width: 0px;
+  height: auto;
+  margin-top: 2px;
+}
+
+
+.req:after{
+  content: '*';
+  color: red;
+}
+
+p
+{ margin: 0px;
+  padding: 0px;
+  padding-bottom: 15px;
+  line-height: 1.7em;
+}
+
+h1, h2, #htext_text span
+{ font: normal 180% 'century gothic', arial, sans-serif;
+  color: #EEF3CD;
+  margin: 0 0 15px 0;
+  text-align: center;
+  padding: 8px 0 5px 0;}
+
+h2
+{ font: normal 170% 'century gothic', arial, sans-serif;
+  color: #B60000;}
+
+a, a:hover
+{ 
+  color: #635B53;
+  text-decoration: none;}
+
+a:hover
+{ border-bottom: 1px solid;
+  color: #00C5EE;}
+
+a{ 
+outline: none;}
+
+#main, #header, footer{
+  margin-left: auto; 
+  margin-right: auto;}
+
+#header{ 
+  height: 46px;
+  padding-top: 4px;
+  padding-left: 4px;} 
+
+#header span{
+    text-align: center;
+    display: block;
+    padding-top: 5px;
+    font-size: 2.0em;
+    color: wheat;
+}
+
+.questCirc {
+    border-radius: 50%;
+    padding: 0px 4px;
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    font: 15px Arial, sans-serif;
+    width: 10px;
+    height: 18px;
+    display: inline-block;
+}
+
+#obsah_outer{ 
+  width: 900px;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+  border-radius: 25px;
+  border: 15px solid #FFF;} 
+
+#obsah{ 
+  text-align: left;
+  background-color:#EDEDED;
+  padding: 10px 20px 20px 20px;
+  }
+
+.info{
+  /*position: absolute;*/
+}
+
+.error-msg{
+    position: absolute;
+    display: none;
+    border: 2px solid black;
+    border-radius: 8px;
+    z-index: 100;
+    padding: 5px 10px;
+    margin-top: 4px;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.questCirc:hover .error-msg {
+    display: block;
+}
+
+.infotext .header
+{
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid black;
+  text-align: center;
+  font: normal 170% 'century gothic', arial, sans-serif;
+  padding: 5px 0 5px 0;
+  color: #B60000;
+}
+
+.content table{
+  margin-left: 10px;
+}
+
+footer{ 
+  height: 30px;
+  padding: 20px 0 5px 0;
+  text-align: center; 
+  color: #EEF3CD;
+  letter-spacing: 0.1em;
+}
+

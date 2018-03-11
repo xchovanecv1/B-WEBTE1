@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="sk">
+
+<head>
+  <title>Výpočet prvočísel</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!--<script src="./style/jquery.min.js"></script>-->
+  <script src="./style/script.js"></script>
+
+</head>
+<body>
+  <div id="main">
+    <div id="obsah_outer">
+      <div id="header">
+        <h1>Výpočet prvočísel v požadovanom rozsahu.</h1>
+      </div>
+      <div id="obsah">
+        <div id="inptform">
+          <div id="error-msg">
+              error
+          </div>
+          <fieldset>
+            <legend>Hranice výpočtu prvočísel</legend>
+              <div class="row centered">
+                  <div class="field">
+                    <label for="start" class="req"><span>Začiatok</span></label>
+                    <div>
+                    <input required type="text" name="start" id="start" placeholder="Začiatok">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="end" class="req" ><span>Koniec</span></label>
+                    <div>
+                      <input required type="text" name="end" id="end" placeholder="Koniec">
+                    </div>
+                  </div>
+                </div>
+            </fieldset>
+            <fieldset>
+            <legend>Formát výstupu</legend>
+              <div class="row">
+                <input type="radio" id="pt" name="outputtype" value="pt" checked>
+                    <label for="pt" ><span>Obyčajný text</span></label> <br>
+                <input type="radio" id="ja" name="outputtype" value="ja" > 
+                    <label for="ja" ><span>Javascript Array</span></label><br>
+                <input type="radio" id="jo" name="outputtype" value="jo" > 
+                    <label for="jo" ><span>Json Object</span></label>
+              </div>
+            </fieldset>
+            <button name="odoslat" value="Odoslať formulár" onclick="startCalculation();">Zahájiť výpočet</button>
+
+            <ul>
+              <li> Autor scriptu pre test primality čísla: <a href="http://www.javascripter.net/faq/numberisprime.htm" target="_blank">Javascripter.net</a></li>
+            </ul>
+        </div>
+        <div class="wrapper">
+          <div id="calculatin">
+            <span>0%</span>
+          </div>
+          <div id="primes">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span>&copy; 2017 Hrdzavá trubka Incorporated</span>
+    </footer>
+  </div>
+</body>
+</html>
