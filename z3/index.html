@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html lang="sk">
+
+<head>
+  <title>Štúdijný prieskum</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <script src="./style/script.js"></script>
+</head>
+<body>
+  <div id="main">
+    <div id="obsah_outer">
+      <div id="header">
+        <h1>Prieskum mesta Bratislava o spokojnosti študentov na školách.</h1>
+      </div>
+      <section id="obsah">
+        <h2>Poprosíme o vyplnenie pravdivých údajov, Ďakujeme!</h2>
+        <form action="#" method="post" enctype="multipart/form-data" onsubmit="return val_form(this)" class="form-style">
+          <fieldset>
+            <legend>Osobné údaje</legend>
+              <div class="row">
+                  <div class="field">
+                    <label for="usrname" class="req"><span>Meno:</span></label>
+                    <div>
+                    <input required type="text" name="usrname" id="usrname" placeholder="Meno">
+                    <div class="questCirc">?
+                        <div class="error-msg">Zadajte Vaše krstné meno</div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="usrsrnm" class="req" ><span>Priezvisko:</span></label>
+                    <div>
+                    <input required type="text" name="usrsrnm" id="usrsrnm" placeholder="Priezvisko">
+                    <div class="questCirc">?
+                        <div class="error-msg">Zadajte Vaše rodné priezvisko</div>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="field">
+                  <label for="bddate" class="req" ><span>Dátum narodenia:</span></label>
+                  <div>
+                    <input required type="date" name="bddate" onblur="field_act(this)" data-val="date" id="bddate">
+                    <span id="bddate-er" class="error-msg"></span>
+                    <div class="questCirc">?
+                        <div class="error-msg">Pokiaľ sa Vám nezobrazil kalendár, zadávajte dátum narodenia vo formáte rok-mesiac-deň</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="usrage" class="req" ><span>Vek:</span></label>
+                  <div>
+                  <input required type="number" name="usrage" id="usrage" placeholder="Vek" data-val="age" data-depend="bddate" onblur="field_act(this)">
+                  <span id="usrage-er" class="error-msg"></span>
+                  <div class="questCirc">?
+                        <div class="error-msg">Zadajte číselne Váš vek</div>
+                  </div>
+                </div>
+                </div>
+              </div>
+          </fieldset>
+
+          <fieldset class="checkboxs">
+            <legend>Zvolte, na aké pohlavie sa cítite</legend>
+              <div>
+                <input type="checkbox" id="male" name="gender" value="Muž">
+                <label for="male">Muž</label>
+              </div>
+              <div>
+                <input type="checkbox" id="female" name="gender" value="Žena">
+                <label for="female">Žena</label>
+              </div>
+              <div>
+                <input type="checkbox" id="unidentified" name="gender" value="Neidentifikovaný">
+                <label for="unidentified">Nechcem sa identifikovať</label>
+              </div>
+              <div>
+                <input type="checkbox" onclick="field_act(this)" data-val="toggle" data-change="genderOther" id="other" name="gender" value="other">
+                <div>
+                  <label for="other">Iné</label>
+                  <input type="text" id="genderOther" style="display: none;" name="genderother" placeholder="eg. Apache Helicopter">
+                </div>
+              </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Kontaktné informácie</legend>
+              <div class="row">
+                <div class="field">
+                  <label for="mail" class="req"><span>E-Mail:</span></label>
+                  <div>
+                    <input type="text" data-val="email" onblur="field_act(this)" name="email" id="mail" placeholder="meno@domena.tld">
+                    <span id="mail-er" class="error-msg"></span>
+                    <div class="questCirc">?
+                        <div class="error-msg">Kontaktný mail, zadávajte vo formáte meno@doména.com</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="phone" ><span>Telefónne číslo:</span></label>
+                  <div>
+                    <input type="text" name="phone" id="phone" data-val="phone" onblur="field_act(this)" placeholder="+xxx xxx xxx xxx">
+                    <span id="phone-er" class="error-msg"></span>
+                    <div class="questCirc">?
+                        <div class="error-msg">Telefónne číslo sa zdáva v medzinárodnom formáte +421 xxx xxx xxx</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </fieldset>
+          
+          <fieldset class="checkboxs">
+            <legend>Informácie o štúdiu</legend>
+            <label for="university"><span>Úroveň školy, ktorú navštevujete:</span></label>
+              <div>
+              
+              <input type="radio" onclick="field_act(this)" data-val="hide_var" name="school" value="none" id="sch_none" checked> 
+              <label for="sch_none"><span>Neštudujem</span></label>
+
+              <input type="radio" onclick="field_act(this)" data-val="hide_var" name="school" value="elementary" id="sch_element">
+              <label for="sch_element"><span>Základná škola</span></label>
+
+              <input type="radio" onclick="field_act(this)" data-val="show_var" data-change="high_extra" name="school" value="high" id="sch_high">
+              <label for="sch_high"><span>Stredná škola</span></label>
+
+              <input type="radio" onclick="field_act(this)" data-val="show_var" data-change="uni_extra" name="school" value="university" id="sch_uni"> 
+              <label for="sch_uni"><span>Univerzita</span></label>
+
+              <div id="uni_extra" style="display: none;">
+                  <select id="university" name="uni-name" onchange="level_select(this,0)" data-change="faculty">
+                    <option value="none">---</option>
+                    <option value="stu">Slovenská Technicka Univerzita v Bratislave</option>
+                    <option value="uk">Univerzita Komenského v Bratislave</option>
+                    <option value="pae">Paneurópska vysoká škola</option>
+                  </select>
+                <div id="faculty-outer" style="display: none;">
+                    <label for="faculty"><span>Fakulta:</span></label>
+                    <select id="faculty" name="uni-faculty" onchange="level_select(this,1)"  data-change="state">
+                    </select>
+
+                    <div id="state-outer" style="display: none;">
+                      <label for="state"><span>Stupeň štúdia:</span></label>
+                      <select id="state" name="uni-state">
+                      </select>
+                    </div>
+                </div>
+              </div>
+              <div id="high_extra" style="display: none;">
+                <label for="high_school"><span>Druh strednej školy:</span></label>
+                  <select id="high_school" name="high-name">
+                    <option value="gymnazium">Gymnázium</option>
+                    <option value="priemyslovka">Priemyslovka</option>
+                    <option value="odborneuci">Odborné učilište</option>
+                  </select>
+              </div>
+              </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Dodatočné informácie</legend>
+              <label for="bddate"><span>Čo by ste zmenili na Vašek škole alebo celkovo v školstve:</span></label>
+              <textarea rows="4" cols="50" name="usrnote"></textarea>
+
+              <input type="hidden" name="autorname" value="Viktor Chovanec">
+              <input type="hidden" name="apikey" value="#">
+              <input type="hidden" name="to" value="#">
+              <!--feistu05@gmail.com-->
+              <input type="hidden" name="from" value="#">
+              <input type="hidden" name="subject" value="Zadanie č.3. Formulár">
+              <input type="hidden" name="redirectOk" value="https://en.wikipedia.org/wiki/Thank_You">
+              <input type="hidden" name="redirectFalse" value="https://www.depechemode-live.com/wiki/Something_Went_Wrong_(compilation)">
+          </fieldset>
+
+          <input type="submit" name="odoslat" value="Odoslať formulár">
+
+        </form>
+      </section>
+    </div>
+    <footer>
+      <span>&copy; 2017</span>
+    </footer>
+  </div>
+</body>
+</html>
