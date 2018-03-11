@@ -1,0 +1,58 @@
+{
+  "photos": [
+      {
+        "src": "fotka1.jpg",
+        "title": "Riverside, South California",
+        "description": "<p><strong>Lorem Ipsum</strong> je fiktívny text, používaný pri návrhu tlačovín a&nbsp;typografie. Lorem Ipsum je štandardným výplňovým textom už od 16. storočia, keď neznámy tlačiar zobral sadzobnicu plnú tlačových znakov a&nbsp;pomiešal ich, aby tak vytvoril vzorkovú knihu. Prežil nielen päť storočí, ale aj skok do elektronickej sadzby, a&nbsp;pritom zostal v&nbsp;podstate nezmenený. Spopularizovaný bol v&nbsp;60-tych rokoch 20.storočia, vydaním hárkov Letraset, ktoré obsahovali pasáže Lorem Ipsum, a&nbsp;neskôr aj publikačným softvérom ako Aldus PageMaker, ktorý obsahoval verzie Lorem Ipsum.</p>",
+        "prew" : "fotka1_prew.jpg"
+      },
+      {
+        "src": "fotka2.jpg",
+        "title": "Vodopád hrdinov - Vysoké Tatry",
+        "description": "<p>Je dávno známe, že ak je zrozumiteľný obsah stránky, na ktorej rozloženie sa čitateľ díva, jeho pozornosť je rozptýlená. Dôvodom použitia Lorem Ipsum je fakt, že má viacmenej normálne rozloženie písmen, takže oproti použitiu 'Sem príde text, sem príde text' sa obsah vypĺňanej oblasti na stránke viac podobá na skutočný text. Mnohé balíky publikačného softvéru a&nbsp;editorov webových stránok už používajú Lorem Ipsum ako predvolený výplňový text a&nbsp;keď dáte na internete vyhľadávať 'lorem ipsum', objavíte mnoho webových stránok v&nbsp;rannom štádiu ich vzniku. V&nbsp;minulých rokoch sa objavilo mnoho verzií tohto textu, niekedy náhodou, niekedy úmyselne (pridaný humor a&nbsp;podobne).</p>",
+        "prew" : "fotka2_prew.jpg"
+      },
+      {
+        "src": "fotka3.jpg",
+        "title": "Osirelý Strom",
+        "description": "<p>Napriek všeobecnému presvedčeniu nie je Lorem Ipsum len náhodný text. Jeho korene sú v&nbsp;časti klasickej latinskej literatúry z&nbsp;roku 45 pred n.l., takže má viac ako 2000 rokov. Richard McClintock, profesor latinčiny na Hampden-Sydney College vo Virgínii, hľadal jedno z&nbsp;menej určitých latinských slov, consectetur, z&nbsp;pasáže Lorem Ipsum, a&nbsp;ako vyhľadával výskyt tohto slova v&nbsp;klasickej literatúre, objavil jeho nepochybný zdroj. Lorem Ipsum pochádza z&nbsp;odsekov 1.10.32 a&nbsp;1.10.33 Cicerovho diela (O&nbsp;najvyššom dobre a&nbsp;zle), napísaného v&nbsp;roku 45 pred n.l. Táto kniha je pojednaním o&nbsp;teórii etiky, a&nbsp;bola veľmi populárna v&nbsp;renesancii. Prvý riadok Lorem Ipsum, je z&nbsp;riadku v&nbsp;odseku 1.10.32.</p>",
+        "prew" : "fotka3_prew.jpg"
+      },
+      {
+        "src": "Eiffel_Tower_Vertical.JPG",
+        "title": "Eifelova veža v Paríži",
+        "description": "Eiffelova veža (franc. La Tour Eiffel, francúzska výslovnosť /latuʀɛfɛl/, zaužívaná slovenská výslovnosť /'ai̯fɛlɔva'veʒa/ ) je kovová konštrukcia postavená na Champ de Mars v blízkosti Seiny v Paríži. Je najvyššou stavbou v Paríži a je jeden z najznámejších symbolov sveta. Veža je pomenovaná po jej staviteľovi Gustavovi Eiffelovi. Táto 324 metrov vysoká a 10 100 ton vážiaca architektonická dominanta bola uvedená do prevádzky v roku 1889 ako symbol tzv. Svetovej čestnosti a hneď sa stala atrakciou hlavného mesta. Vežu navštívilo už viac ako 243 miliónov turistov. Tri výškové úrovne veže poskytujú ideálne podmienky na pozorovanie zaujímavostí, ako sú Champ de Mars (Martovo pole), École Militaire a Invalidovňa. Krátkou prechádzkou cez most sa dá dostať k záhradám Trocadéro.",
+        "prew" : "Eiffel_Tower_Vertical_prew.jpg"
+      },
+      {
+        "src": "fotka4.jpg",
+        "title": "Osamelý Bača bez oviec",
+        "description": "Veža bola postavená v rokoch 1887 až 1889 Eiffelovou firmou Gustave Eiffel & Cie pri príležitosti storočného jubilea Francúzskej revolúcie pre Svetovú výstavu. Architektom nebol Gustave Eiffel ale Stephen Sauvestre, ktorý navrhol túto vežu na objednávku Švajčiara Maurice Koechlina. Ten spolu s Emilom Nouguierom vytvoril aj prvé náčrty. Stavebné náklady Eiffelovej veže dosiahli presne 7 739 401 frankov a 31 centimov a boli tak asi o jeden milión frankov vyššie ako odhad Gustava Eiffela. V posledných piatich mesiacoch roku jej otvorenia (1889) navštívilo ale novú atrakciu 1,9 milióna ľudí, čím sa do konca roka vrátili už tri štvrtiny celkových nákladov. Týmto sa stala Eiffelova veža výnosným podnikom.",
+        "prew" : "fotka4_prew.jpg"
+      },
+      {
+        "src": "fotka5.jpg",
+        "title": "Číra príroda da dosah",
+        "description": "Curabitur sit amet eros orci. Praesent in tortor quam. Curabitur nec purus in sapien ornare viverra. Donec malesuada neque et porta tristique. Proin pretium ante velit, in posuere eros pretium et. Maecenas a lacus imperdiet, vehicula arcu id, vestibulum quam. Mauris iaculis ligula aliquam, finibus neque in, luctus lorem. Curabitur ex libero, efficitur nec orci at, pellentesque lacinia sapien. Nunc eget dignissim dui. Ut faucibus mauris ipsum. Sed convallis, eros a luctus blandit, erat leo semper felis, quis faucibus augue purus eget neque. Quisque risus dui, varius ut velit nec, aliquam maximus sem.",
+        "prew" : "fotka5_prew.jpg"
+      },
+      {
+        "src": "fotka6.jpg",
+        "title": "Hoidačka predstavivosti",
+        "description": "Aliquam erat volutpat. Proin nec nibh ut tellus bibendum varius semper et mauris. Donec nec lacinia metus. Nulla ut nunc non arcu laoreet feugiat in in ante. Proin justo enim, finibus eget libero id, auctor vulputate nunc. Nunc aliquet, libero sed lacinia blandit, ligula felis finibus lacus, id finibus odio est sed neque. Suspendisse varius, felis at pulvinar maximus, enim magna vulputate leo, ac tincidunt dui augue ut nisi. Aenean malesuada auctor lobortis. Integer viverra dictum justo, eu facilisis orci volutpat ac. Quisque mollis volutpat elit ac sagittis. Fusce fermentum nibh quis neque ultricies, eget gravida dui mattis.",
+        "prew" : "fotka6_prew.jpg"
+      },
+      {
+        "src": "fotka7.jpg",
+        "title": "Ale tak to hádam nie, kto by sa dostal až sem ?",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus lacus leo, non placerat odio interdum sed. Sed mollis tortor nunc, ac imperdiet enim placerat vel. Duis efficitur eu nibh eget luctus. Vivamus aliquet orci in ornare commodo. Duis interdum vehicula vestibulum. In hac habitasse platea dictumst. Morbi accumsan condimentum mi, ac tristique ligula porttitor et. Phasellus arcu ligula, rutrum sed ultricies vitae, sollicitudin nec massa. Etiam dolor arcu, vestibulum vel blandit sed, fringilla non dolor.",
+        "prew" : "fotka7_prew.jpg"
+      },
+      {
+        "src": "fotka8.jpg",
+        "title": "Kvapkajúca voda",
+        "description": "Morbi justo nisi, ultrices ullamcorper euismod at, aliquet non neque. Nulla vulputate rhoncus viverra. Aliquam erat volutpat. Sed malesuada sollicitudin nisi vitae blandit. Nunc nec commodo enim. Aliquam ac aliquet purus. Aenean vel turpis est. Nunc malesuada, lacus at pharetra rutrum, erat dui egestas quam, sollicitudin fringilla ex orci vitae dui. Morbi volutpat ex a nulla tristique eleifend. Etiam egestas dignissim nisi, id consectetur ligula aliquet non. Suspendisse ut augue massa. Integer sed enim risus. Sed aliquet turpis a semper vulputate. Quisque turpis quam, lacinia quis elit id, pulvinar malesuada lacus. Cras venenatis rhoncus leo sed luctus. Morbi dictum elit ligula, vitae lacinia est sagittis vitae.",
+        "prew" : "fotka8_prew.jpg"
+      }     
+    ]
+}
