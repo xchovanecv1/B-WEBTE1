@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Autor suboru: Katarina Zakova -->
+<!-- Posledna aktualizacia: oktober 2016 -->
+<photos>
+	<photo>
+		<src>fotka1.jpg</src>
+		<title>Názov fotky 1</title>
+		<description>Dlhší popis obrázku 1</description>   
+	</photo>
+	<photo>
+		<src>fotka2.jpg</src>
+		<title>Názov fotky 2</title>
+		<description>Dlhší popis obrázku 2</description>   
+	</photo>
+	<photo>
+		<src>fotka3.jpg</src>
+		<title>Názov fotky 3</title>
+		<description>Dlhší popis obrázku 3</description>   
+	</photo>  
+</photos>
