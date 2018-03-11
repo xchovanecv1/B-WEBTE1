@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+html{height: 100%;}
+
+.ui-loader{
+  display: none;
+}
+
+body
+{ 
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.8em;
+  background: #090708;
+  color: #5D5D5D;
+}
+
+#primes {
+  display: none;
+}
+
+.wrapper{
+  width: 100%;
+}
+
+textarea{
+
+    width: 100%;
+    min-height: 350px;
+    border-radius: 10px;
+}
+
+.labels {
+  color: white;
+  background-color: red;
+  font-family: "Lucida Grande", "Arial", sans-serif;
+  font-size: 10px;
+  text-align: center;
+  width: 30px;
+  white-space: nowrap;
+}
+
+#calculatin {
+
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+  background-image: url('./loading.svg');
+  background-size: contain;
+  text-align: center;
+  vertical-align: middle;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#calculatin span{
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font: normal 300% 'century gothic', arial, sans-serif;
+  color: #000000;
+}
+
+.error{
+  border-color: red;
+}
+fieldset{
+  margin-bottom: 15px;
+}
+fieldset legend{
+    font: normal 150% 'century gothic', arial, sans-serif;
+    color: #43423F;
+
+}
+
+.checkboxs div label{
+  padding-left: 20px;
+}
+/*
+.error-msg{
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: black 2px solid;
+}
+*/
+#game{
+  position: relative;
+}
+.overlay{
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  cursor: default;
+  display: none;
+}
+
+.overlay .demo-icon{
+  margin-top: 5px;
+}
+
+.row{
+  /*display: inline-block;*/
+  display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.centered{
+  text-align: center;
+}
+.field{
+  display: inline-block;
+  position: relative;
+  width: 49%;
+}
+#header h1{
+  font-size: 1.5vh;
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+  margin: 0px;
+}
+
+label{
+  display: block;
+  padding-bottom: 10px;
+  font-size: 110%;
+  color:#A6886B;
+}
+
+.overlay input,.overlay select{
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+#obsah h2, #header h1, #obsah p{
+  font-family: 'Press Start 2P', cursive;
+  color:#A6886B;
+}
+
+#gamehelp p{
+  font-family: "Lucida Grande", "Arial", sans-serif;
+}
+
+.portrait #obsah p{
+  font-size: 2.5vw;
+}
+
+.landscape #obsah p{
+  font-size: 1.2vw;
+}
+
+#header i.demo-icon{
+  font-size: 3.5em;
+}
+
+i.demo-icon{
+  cursor: pointer;
+  font-size: 2.5em;
+}
+
+
+i.demo-icon:focus{
+  color:red;
+}
+
+
+i.demo-icon.disabled{
+  color:grey;
+}
+
+
+.row .w80
+{
+  display: inline-block;
+  width: 79%;
+}
+.row .w20
+{
+  display: inline-block;
+  width: 20%;
+}
+.row .w25
+{
+  display: inline-block;
+  width: 25%;
+}
+.row .w30
+{
+  display: inline-block;
+  width: 30%;
+}
+.row .w40
+{
+  display: inline-block;
+  width: 35%;
+}
+.row .w60
+{
+  display: inline-block;
+  width: 60%;
+}
+.row .wfield{
+  -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  padding-bottom: 10px;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.wfield button{
+  margin-bottom: 8px;
+  margin-top: 5px;
+  width: 90%;
+}
+
+.demo-icon{
+  color: #A6886B
+}
+
+.scoretile{
+  font-family: 'Press Start 2P', cursive;
+  color:#A6886B;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  background: gray;
+  border-radius: 10px;
+  background: #180b05;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.scoretitle{
+  width: 100%;
+  padding: 10px 0;
+}
+
+.tiletext{
+  font-family: 'Press Start 2P', cursive;
+  padding-bottom: 5px;
+}
+
+#lengthMsg
+{
+  display: none;
+}
+
+.game-block{
+  width: 100%;
+}
+
+.labels {
+     color: red;
+     background-color: white;
+     font-family: "Lucida Grande", "Arial", sans-serif;
+     font-size: 10px;
+     font-weight: bold;
+     text-align: center;
+     /*width: 40px;*/
+     min-width: 190px;
+     border: 2px solid black;
+     white-space: nowrap;
+     border-radius: 5px;
+      padding: 10px;
+   }
+
+.form-style {
+    margin:10px auto;
+    max-width: 900px;
+    padding: 0px 12px 10px 20px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.form-style label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+}
+
+input,
+textarea, 
+select,
+button{
+    font-family: 'Press Start 2P', cursive;
+    box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    outline: none;
+    min-width: 200px; 
+    height: 35px; 
+    width: 99%;
+}
+
+.form-style textarea{
+  height: auto;
+  width: 100%
+}
+
+button
+{
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: bold;
+  background: #4B99AD;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+    width: 100%;
+}
+
+button:disabled
+{
+  background: grey;
+}
+
+.form-style input[type=checkbox], .form-style input[type=radio]{
+
+  float:left;
+  min-width: 0px;
+  height: auto;
+  margin-top: 2px;
+}
+
+
+.req:after{
+  content: '*';
+  color: red;
+}
+
+p
+{ margin: 0px;
+  padding: 0px;
+  padding-bottom: 15px;
+  line-height: 1.7em;
+}
+
+h1, h2, #htext_text span
+{ font: normal 180% 'century gothic', arial, sans-serif;
+  color: #EEF3CD;
+  margin: 0 0 15px 0;
+  text-align: center;
+  padding: 8px 0 5px 0;}
+
+h2
+{ font: normal 170% 'century gothic', arial, sans-serif;
+  color: #B60000;}
+
+a, a:hover
+{ 
+  color: #635B53;
+  text-decoration: none;}
+
+a:hover
+{ border-bottom: 1px solid;
+  color: #00C5EE;}
+
+a{ 
+outline: none;}
+
+body{
+  margin: 0px;
+}
+
+.landscape .ui-page{
+  width: 33%;
+  margin: 0px auto;
+}
+
+.portrait .ui-page{
+  width: 90%;
+  margin: 0px auto;
+}
+
+#main {
+    width: 100%;
+    /*padding-bottom: 56.25%;
+    position: relative;
+    background: black;*/
+}
+
+#main > div {
+    /*position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    color: white;
+    font-size: 24px;*/
+    text-align: center;
+}
+
+/*
+#main {
+
+  width: 100%;
+  padding-bottom: 56.25%;
+  position: relative;
+  background: black;
+
+}
+
+.landscape #obsah_outer{ 
+  width: 80%;
+  max-height: 100%;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+
+} 
+*/
+/*
+.landscape #obsah_outer{ 
+  width: 80%;
+  max-width: 445px;
+  max-height: 670px;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+  border-radius: 25px;
+  border: 15px solid #FFF;
+
+} 
+*/
+
+#main, #header, #obsahfooter, footer{
+  margin-left: auto; 
+  margin-right: auto;}
+
+#header, #obsahfooter{ 
+  background: saddlebrown;
+  padding-top: 4px;
+  padding-bottom: 1px;
+  padding-left: 4px;} 
+
+#header span, #obsahfooter span{
+    text-align: center;
+    display: block;
+    padding-top: 5px;
+    font-size: 2.0em;
+    color: wheat;
+}
+
+.questCirc {
+    border-radius: 50%;
+    padding: 0px 4px;
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    font: 15px Arial, sans-serif;
+    width: 10px;
+    height: 18px;
+    display: inline-block;
+}
+
+
+#obsah{ 
+  background-color:#EDEDED;
+  width: 100%;
+  text-align: center;
+  }
+  
+.obsah-inner{
+  position: relative;
+  display: inline-block;
+}
+
+.vertcent{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.info{
+  /*position: absolute;*/
+}
+
+.error-msg{
+    position: absolute;
+    display: none;
+    border: 2px solid black;
+    border-radius: 8px;
+    z-index: 100;
+    padding: 5px 10px;
+    margin-top: 4px;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.questCirc:hover .error-msg {
+    display: block;
+}
+
+.infotext .header
+{
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid black;
+  text-align: center;
+  font: normal 170% 'century gothic', arial, sans-serif;
+  padding: 5px 0 5px 0;
+  color: #B60000;
+}
+
+.content table{
+  margin-left: 10px;
+}
+
+footer{ 
+  height: 30px;
+  padding: 20px 0 5px 0;
+  text-align: center; 
+  color: #EEF3CD;
+  letter-spacing: 0.1em;
+}
+
+td {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border: 1px solid #CCCCCC;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+    border-radius:20px;
+}
+
+.rot90{
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+}
+
+.rot180{
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+}
+
+.rot270{
+  -ms-transform: rotate(270deg); /* IE 9 */
+  -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+  transform: rotate(270deg);
+}
+
+.not-dragable{
+  cursor: not-allowed;
+}
+
+.is-dragable{
+  cursor: move;
+}
+
+#obsah{
+  background-image: url("../game/graphics/helper/back.png");
+}
+
+#header, #obsahfooter{
+  background-image: url("../game/graphics/helper/headerb.png");
+}
+
+img{
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  max-width: 100%;
+}
+
+.ui-draggable-dragging{
+  width: 100%;
+  max-width: 10vh;
+}
+
+#resp-table {
+width: 100%;
+display: table;
+}
+
+#resp-table-body{
+display: table-row-group;
+}
+
+.resp-table-row{
+display: table-row;
+}
+
+.game-block-e{
+  cursor: default;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+.game-cols-2 {
+  width: 50%;
+}
+
+.game-cols-3 {
+  width: 33%;
+}
+.game-cols-4 {
+  width: 25%;
+}
+.game-cols-5 {
+  width: 20%;
+}
+.game-cols-6 {
+  width: 16%;
+}
+.game-cols-7 {
+  width: 14%;
+}
+.game-cols-8 {
+  width: 12.4%;
+}
+
+#game .hovered {
+  background: rgba(128,128,128,0.5);
+  border-radius: 10px;
+}
+
+.table-body-cell{
+/*display: table-cell;*/
+
+display: inline-block;
+
+
+}
+
+@media print {
+  h1 {
+  font-size: 24pt;
+  }
+
+  h2 {
+  font-size: 14pt;
+  margin-top: 25px;
+  }
+
+  .landscape .ui-page{
+    width: 90%;
+    margin: 0px auto;
+  } 
+
+  .portrait .ui-page{
+    width: 90%;
+    margin: 0px auto;
+  } 
+  .ui-page{
+    width: 90%;
+    margin: 0px auto;
+  } 
+}

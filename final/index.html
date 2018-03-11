@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html lang="sk">
+
+<head>
+  <title>Ball's not hot</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="Interactive d&d game">
+  <meta name="keywords" content="DnD,Game,Interactive,Puzzle">
+  <meta name="author" content="Viktor Chovanec">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="stylesheet" type="text/css" href="style/fontello.css" />
+  <script src="./style/jquery-1.12.4.min.js"></script>
+  <script src="./style/jquery-ui.min.js"></script>
+  <script src="./style/jquery.ui.touch-punch.min.js"></script>
+  <!--<script src="./style/jquery.mobile-git.min.js"></script> -->
+  <script src="./style/script.js"></script>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="./game/graphics/helper/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./game/graphics/helper/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./game/graphics/helper/favicon-16x16.png">
+  <link rel="manifest" href="./game/graphics/helper/manifest.json">
+  <link rel="mask-icon" href="./game/graphics/helper/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./game/graphics/helper/favicon.ico">
+  <meta name="msapplication-config" content="./game/graphics/helper/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+  <div class="ui-page">
+    <div id="main">
+      <div id="obsah_outer">
+        <div id="header">
+          <div class="row">
+            <h1 class="centered">Ball's not hot</h1>
+          </div>
+          <div class="row">
+            <div class="w30 wfield">
+                <div class="scoretile">
+                    <div class="scoretitle">
+                      Skóre
+                    </div>
+                    <div id="score" class="tiletext">
+                      0
+                    </div>
+                    <div class="scoretitle">
+                      Best
+                    </div>
+                    <div id="bestscore" class="tiletext">
+                      0
+                    </div>
+                </div>
+            </div>
+            <div class="w30 wfield">
+                <div class="scoretile">
+                    <div class="scoretitle">
+                      Kolo
+                    </div>
+                    <div id="gameprogress" class="tiletext">
+              
+                    </div>
+                </div>
+                <div class="scoretile">
+                      <div id="date" class="scoretitle">
+                
+                      </div>
+                </div>
+            </div>
+            <div class="w40 wfield">
+                <i id="restartGame" class="demo-icon icon-arrows-cw"></i>
+                <i id="saveGame" class="demo-icon icon-floppy"></i>
+            </div>
+          </div>
+          <!--
+          <h1>Ball that won't Roll</h1>
+          
+            <div id="gameprogress">
+              
+            </div>
+            <div>
+              <button id="restartGame">Restart</button>
+              <button id="saveGame">Save Progress</button>
+            </div>
+          -->
+        </div>
+        <div id="obsah">
+          <div class="obsah-inner">
+            <div class="row">
+              <div id="game">
+              </div>
+            </div>
+            <div id="gamesettings" class="overlay">
+              <div class="vertcent">
+                <h2>Upravenie atribútov playera</h2>
+                <label for="valbstscr">Best score</label>
+                <input type="number" name="bestscore_val" id="valbstscr" placeholder="Najlepsie dosiahnute skore">
+                <label for="gameselect">Výber kola</label>
+                <select id="gameselect"></select>
+                
+                <div class="row">
+                    <div class="field">
+                      <i id="savesettings" class="demo-icon icon-floppy"></i>
+                    </div>
+                    <div class="field">
+                      <i id="closesettings" class="demo-icon icon-cancel"></i>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div id="gamewon" class="overlay">
+              <div class="vertcent">
+                <h2>Gratulujeme! Toto kolo ste úspešne vyhrali!</h2>
+                  <i id="nextround" class="demo-icon icon-right-circled"></i>
+              </div>
+            </div>
+            <div id="gameend" class="overlay">
+              <div class="vertcent">
+                <h2>Gratulujeme! Splnili ste všetky dostupné puzzle.</h2>
+                <i id="newgame" class="demo-icon icon-arrows-cw"></i>
+                </div>
+            </div>
+            <div id="gamehelp" class="overlay">
+              <div class="vertcent">
+                <p>Vitajte v hre Ball's not Hot!</p>
+                <p>Cieľom hry je vytvorenie priamej cesty zo štartu <img  width="32" height="32" src="./game/graphics/fields/start.png" alt="start block"> do ciela <img width="32" height="32" src="./game/graphics/fields/finish.png" alt="finish block"></p>
+                <p>Bloky je možne presúvať pomocou uchopenia myšou alebo prstom (mobilné zariadenia) a následným premiestnením bloku na požadované miesto.</p>
+                <p>Podľa pravidiel je možný len presun do kríža susedných miest, na ktorých sa nenachádza žiadny viditeľný blok.</p>
+                <p>Každým presunom bloku sa Vám pripočítavajú body viditeľné na vrchu obrazovky. Cieľom je vytvorenie cesty čo najmenším počtom presunov.</p>
+                <p>Veľa štastia a zábavy!</p>
+                </div>
+
+                <i id="closehelp" class="demo-icon icon-cancel"></i>
+            </div>
+            <div id="gamesaved" class="overlay">
+              <div class="vertcent">
+                <h2>Hra bola uložená!</h2>
+              </div>
+            </div>
+            <div id="gamerestart" class="overlay">
+              <div class="vertcent">
+                <h2>Hra bola reštartovaná!</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="obsahfooter">
+          <div class="row">
+              <div class="w25">
+                <i id="goback" class="demo-icon icon-left-circled disabled"></i>
+              </div>
+              <div class="w25">
+                <i id="goforward" class="demo-icon icon-right-circled disabled"></i>
+              </div>
+              <div class="w25">
+                <i id="editsettings" class="demo-icon icon-cog"></i>
+              </div>
+              <div class="w25">
+                <i id="showhelp" class="demo-icon icon-help-circled"></i>
+              </div>  
+          </div>
+        </div>
+      </div>
+    <footer>
+      <span>&copy; 2017 felda combi Incorporated</span>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
