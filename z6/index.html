@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="sk">
+
+<head>
+  <title>Funkčná ukážka Google Maps API</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXw4CW1gLQzHGxDQKq_wO8fUF4c_S8Nmk&libraries=places"></script>
+  <script src="./style/markerwithlabel.js"></script>
+</head>
+<body>
+  <div id="main">
+    <div id="obsah_outer">
+      <div id="header">
+        <h1>Funkčná ukážka Google Maps API</h1>
+      </div>
+      <section id="obsah">
+        <div class="row">
+          <h2>Pre prípad potreby navigácie k fakulte zadajte východziu adresu</h2>
+        </div>
+        <div class="row">
+          <input id="pac-input" class="w80" type="text" placeholder="Zadajte miesto z ktorého plánujete cestovať na Fakultu.">
+          <select id="driveType" class="w20" onchange="renaviagte()">
+            <option value="car">Vozidlom</option>
+            <option value="walk">Pešo</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="field">
+            <div id="googleMap" style="width:100%;height:400px;"></div>
+          </div>
+          <div class="field">
+            <div id="googleMapStreet" style="width:100%;height:400px;"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2 id="lengthMsg">Vypočítaná trasa zobrazená na mape má dĺžku <span id="kilometraz">55 km</span>.</h2>
+        </div>
+         
+        <script src="./style/script.js"></script>
+      </section>
+
+     </div>
+    <footer>
+      <span>&copy; 2017 Krteček Incorporated</span>
+    </footer>
+  </div>
+</body>
+</html>
